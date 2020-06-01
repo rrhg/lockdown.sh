@@ -86,6 +86,8 @@ install_fail2ban() {
 
 configure_kernel() {
   # Configure Kernel
+  # example first one is for 
+  #   enable TCP SYN cookie protection to save my domain from SYN Attack. 
   echo "net.ipv4.tcp_syncookies: 1
 net.ipv4.conf.all.accept_source_route: 0
 net.ipv6.conf.all.accept_source_route: 0
